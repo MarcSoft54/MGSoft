@@ -1,0 +1,32 @@
+
+<MainWidget>:
+    recycleView: ListeMedoc
+        RecycleView:
+            id:ListeMedoc
+            viewclass: "Liste_Medoc"
+            RecycleBoxLayout:
+                default_size: None, dp(56)
+                default_size_hint: 1, None
+                size_hint_y: None
+                height: self.minimum_height
+                orientation: "vertical"
+                spacing: "16dp"
+
+
+<Liste_Medoc>:
+    Label:
+        text: str(root.code)
+    Label:
+        text: root.nom
+    Label:
+        text: root.voix_admission
+    Label:
+        text: root.poso
+    Label:
+        text: root.categorie
+    Label:
+        text: root.origine
+    Label:
+        text: str(root.prix)
+    Label:
+        text: str(root.quantite)
